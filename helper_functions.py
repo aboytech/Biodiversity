@@ -30,15 +30,14 @@ def get_aggregates(dataframe, column_name, column_formal, type):
 # Plot an histogram to see distributions
 def plot_hist(dataframe, column_name, aggregates, xlabel, ylabel, title):
 
+    # Get all the counts of our dataset column we are trying to plot
     counts, bins = np.histogram(dataframe[column_name])
 
-    count = 0
-
+    # Get the max value of the counts to use it for plot the vlines
     count = 0
     for index in counts:
         if count < index:
             count = index
-
 
     plt.hist(dataframe[column_name])
     plt.vlines(x = aggregates[0], ymin = 0, ymax = count, color = 'red', linestyles = 'dotted')
