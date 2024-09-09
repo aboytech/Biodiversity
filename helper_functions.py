@@ -11,7 +11,7 @@ def get_species_conservation_status(dataframe, conservation_status):
 # Function to get aggregate statistics for a dataframe
 def get_aggregates(dataframe, column_name, column_formal, type):
 
-    mean = dataframe[column_name].mean()
+    mean = round(dataframe[column_name].mean(), 0)
     median = dataframe[column_name].median()
     mode = dataframe[column_name].mode()[0]
     min = dataframe[column_name].min()
