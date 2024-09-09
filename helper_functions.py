@@ -47,5 +47,3 @@ def plot_hist(dataframe, column_name, aggregates, xlabel, ylabel, title):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)
-    plt.show()
-    plt.clf()
