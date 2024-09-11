@@ -18,3 +18,9 @@ When merging this dataset, I found that **96%** of conservation status rows of t
 In order to know which technique I will address for these values, I explored the observations for each conservation status, and also analyze how many of these values where missing for each National Park. 
 
 Finally, I addressed it as **Structurally Missing Data** because each Park had the same amount of missing values, and their observations where far above the mean of every other subset of the original dataframe. So I came to the conclusion that all those missing values were **Species not in Danger**.
+
+## Analysis
+
+For this project, I wanted to analyze each species conservation status for every National Park. See their distributions, how far apart where their aggregates to know when we can consider a species as a species *Endangered*, *Threatened*, *Of Concern*, *In Recover* or even *Not in Danger*.
+
+You can find my full insights in the following paper: [Biodiversity](https://docs.google.com/presentation/d/1NRzKCZO_4NScrlEXPdvGPYhQQhjWW5xvUwx4G_0e4Xs/edit?usp=sharing)
